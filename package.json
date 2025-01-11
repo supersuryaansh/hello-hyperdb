@@ -1,0 +1,20 @@
+{
+  "name": "hello-hyperdb",
+  "version": "0.0.1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "supersuryaansh",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "b4a": "^1.6.7",
+    "corestore": "^6.18.4",
+    "hyperdb": "^4.7.0",
+    "hyperschema": "^1.5.0"
+  },
+  "devDependencies": {
+    "standard": "^17.1.2"
+  }
+}
