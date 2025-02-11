@@ -1,2 +1,2 @@
 # Hello-hyperdb
-SImple example of using HyperDB
+Simple example of using HyperDB

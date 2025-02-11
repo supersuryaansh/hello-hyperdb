@@ -1,7 +1,7 @@
 // This code creates a schema for the database and saves it to the disk
 
-const Hyperschema = require('hyperschema')
-const HyperDB = require('hyperdb/builder')
+import Hyperschema from 'hyperschema'
+import HyperDB from 'hyperdb/builder/index.js'
 
 // Try to load from an existing schema, if it does not exist then create a new one
 const schema = Hyperschema.from('./spec/schema')
@@ -12,14 +12,14 @@ const ns = schema.namespace('hyperdb-example')
 // Create a schema for the collection
 // You can find a list of supported data types here: https://github.com/holepunchto/compact-encoding
 ns.register({
-  name: 'test',
+  name: 'user',
   compact: false,
   fields: [{
-    name: 'key',
+    name: 'id',
     type: 'string',
     required: true
   }, {
-    name: 'value',
+    name: 'name',
     type: 'string',
     required: true
   }
@@ -35,9 +35,9 @@ const blobs = db.namespace('hyperdb-example')
 
 // Register this specific collection
 blobs.collections.register({
-  name: 'test',
-  schema: '@hyperdb-example/test',
-  key: ['key']
+  name: 'user',
+  schema: '@hyperdb-example/user',
+  key: ['id']
 })
 
 // Save to the disk so that it can be reused
