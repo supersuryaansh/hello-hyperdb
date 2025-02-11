@@ -16,7 +16,7 @@ ns.register({
   compact: false,
   fields: [{
     name: 'id',
-    type: 'string',
+    type: 'int8',
     required: true
   }, {
     name: 'name',
