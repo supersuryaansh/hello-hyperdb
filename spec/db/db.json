@@ -1,0 +1,19 @@
+{
+  "version": 0,
+  "offset": 0,
+  "schema": [
+    {
+      "name": "user",
+      "namespace": "hyperdb-example",
+      "id": 0,
+      "type": 1,
+      "indexes": [],
+      "schema": "@hyperdb-example/user",
+      "derived": false,
+      "key": [
+        "id"
+      ],
+      "trigger": null
+    }
+  ]
+}

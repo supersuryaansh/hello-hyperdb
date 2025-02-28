@@ -1,0 +1,25 @@
+{
+  "version": 1,
+  "schema": [
+    {
+      "name": "user",
+      "namespace": "hyperdb-example",
+      "compact": false,
+      "flagsPosition": -1,
+      "fields": [
+        {
+          "name": "id",
+          "required": true,
+          "type": "uint8",
+          "version": 1
+        },
+        {
+          "name": "name",
+          "required": true,
+          "type": "string",
+          "version": 1
+        }
+      ]
+    }
+  ]
+}
