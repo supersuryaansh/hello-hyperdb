@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "supersuryaansh",
-  "license": "MIT",
-  "description": "",
+  "author": "Holepunch Inc",
+  "license": "Apache-2.0",
+  "description": "Example for HyperDB",
   "dependencies": {
     "b4a": "^1.6.7",
     "compact-encoding": "^2.16.0",

@@ -3,8 +3,8 @@
 /* eslint-disable camelcase */
 /* eslint-disable quotes */
 
-const VERSION = 1
 import { c } from 'hyperschema/runtime'
+const VERSION = 1
 
 // eslint-disable-next-line no-unused-vars
 let version = VERSION
