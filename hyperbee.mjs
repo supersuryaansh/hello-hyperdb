@@ -65,15 +65,16 @@ await swarm2.flushed()
 
 await log(remote.find('@hyperdb-example/user', {})) // list all the initial values
 
-// A watcher can watch when the database has updated
-const watcher = remote.db.watch()
-watcher.on('update', async () => {
+async function remoteOnChange () {
   // Set the db to use the latest snapshot
   // unnecessary if we have set `autoUpdate: true` while creating the db
   // remote.update()
   console.log('New update:')
   await log(remote.find('@hyperdb-example/user', {})) // list all the values
-})
+}
+
+// A watcher can watch when the database has updated
+const watcher = remote.watch(remoteOnChange)
 
 // Shut down gracefully by destroying connection to swarm
 goodbye(async () => {
